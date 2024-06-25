@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            padding: 20px;
+            margin: 10px;
+        }
+        .box1{
+            background-color: #ffd800;
+            /* 왼쪽에 배치되면서 박스2가 오른쪽에 배치됨 */
+            float: left;
+        }
+        .box2{
+            background-color: #0094ff;
+            /* 왼쪽에 배치되면서 박스3이 오른쪽에 배치됨 */
+            float: left;
+        }
+        .box3{
+            background-color: #00ff21;
+            /* 왼쪽에 배치되면서 박스4가 오른쪽에 배치됨 */
+            float: left;
+        }
+        .box4{
+            background-color: #fff;
+            border: 1px solid black;
+            /* 오른쪽에 둥둥뜨면서 배치됨 */
+            /* float: right; */
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">박스1</div>
+    <div class="box2">박스2</div>
+    <div class="box3">박스3</div>
+    <div class="box4">박스4</div>
+</body>
+</html>
